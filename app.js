@@ -1,5 +1,14 @@
 var inputget = document.getElementById("getinp");
 
+function checkLetters() {
+  if (/[a-zA-Z]/.test(inputget.value)) {
+    alert("Please enter numbers only");
+    inputget.value = inputget.value.replace(/[a-zA-Z]/g, "");
+  }
+}
+
+
+
 function setValue(a) {
   inputget.value += a;
 }

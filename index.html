@@ -1,41 +1,43 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Premium Calculator</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
 
-  <body>
-    <div class="calculator-container">
-      <input id="getinp" type="text" class="display-container" placeholder="00000"/>
-      <div class="buttons-grid">
-        <button class="btn btn-function" onclick="clearValue()">AC</button>
-        <button class="btn btn-function" onclick="deletee()">⌫</button>
-        <button class="btn btn-operator" onclick="setValue('%')">%</button>
-        <button class="btn btn-operator" onclick="setValue('/')">÷</button>
-        <button class="btn btn-operator" onclick="setValue('+')">+</button>
-        <button class="btn btn-operator" onclick="setValue('*')">×</button>
-        <button class="btn btn-operator" onclick="setValue('-')">-</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Calculator</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
 
-        <button class="btn btn-number" onclick="setValue('1')">1</button>
-        <button class="btn btn-number" onclick="setValue('2')">2</button>
-        <button class="btn btn-number" onclick="setValue('3')">3</button>
+<body>
+  <div class="calculator-container">
+    <input id="getinp" type="text" class="display-container" placeholder="00000" onkeyup="checkLetters()" />
+    <div class="buttons-grid">
+      <button class="btn btn-function" onclick="clearValue()">AC</button>
+      <button class="btn btn-function" onclick="deletee()">⌫</button>
+      <button class="btn btn-operator" onclick="setValue('%')">%</button>
+      <button class="btn btn-operator" onclick="setValue('/')">÷</button>
+      <button class="btn btn-operator" onclick="setValue('+')">+</button>
+      <button class="btn btn-operator" onclick="setValue('*')">×</button>
+      <button class="btn btn-operator" onclick="setValue('-')">-</button>
 
-        <button class="btn btn-number" onclick="setValue('4')">4</button>
-        <button class="btn btn-number" onclick="setValue('5')">5</button>
-        <button class="btn btn-number" onclick="setValue('6')">6</button>
+      <button class="btn btn-number" onclick="setValue('1')">1</button>
+      <button class="btn btn-number" onclick="setValue('2')">2</button>
+      <button class="btn btn-number" onclick="setValue('3')">3</button>
 
-        <button class="btn btn-number" onclick="setValue('7')">7</button>
-        <button class="btn btn-number" onclick="setValue('8')">8</button>
-        <button class="btn btn-number" onclick="setValue('9')">9</button>
+      <button class="btn btn-number" onclick="setValue('4')">4</button>
+      <button class="btn btn-number" onclick="setValue('5')">5</button>
+      <button class="btn btn-number" onclick="setValue('6')">6</button>
 
-        <button class="btn btn-number" onclick="setValue('0')">0</button>
-        <button class="btn btn-number" onclick="setValue('.')">.</button>
-        <button class="btn btn-equal" onclick="Total()">=</button>
-      </div>
+      <button class="btn btn-number" onclick="setValue('7')">7</button>
+      <button class="btn btn-number" onclick="setValue('8')">8</button>
+      <button class="btn btn-number" onclick="setValue('9')">9</button>
+
+      <button class="btn btn-number" onclick="setValue('0')">0</button>
+      <button class="btn btn-number" onclick="setValue('.')">.</button>
+      <button class="btn btn-equal" onclick="Total()">=</button>
     </div>
-    <script src="./app.js"></script>
-  </body>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
 </html>
