@@ -7,7 +7,9 @@ function checkLetters() {
   }
 }
 
-
+function RoundOff(){
+  inputget.value = Math.round(inputget.value)
+}
 
 function setValue(a) {
   inputget.value += a;

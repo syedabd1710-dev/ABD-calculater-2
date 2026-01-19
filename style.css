@@ -96,7 +96,7 @@ background-image: linear-gradient( rgb(3, 17, 93),rgb(6, 114, 157), rgb(19, 22, 
 }
 
 .btn-equal {
-  font-size: xx-large;
+  font-size: 40px;
   background: rgba(0, 210, 211, 0.2);
   color: #fff;
   border: 1px solid rgba(0, 210, 211, 0.3);
@@ -105,4 +105,17 @@ background-image: linear-gradient( rgb(3, 17, 93),rgb(6, 114, 157), rgb(19, 22, 
 .btn-equal:hover {
   background: rgba(0, 249, 249, 0.4);
   color: rgb(0, 255, 0);
+}
+
+
+.btn-round {
+  font-size: xx-large;
+  background: rgba(6, 255, 255, 0.2);
+  color: #ffea94;
+  border: 1px solid rgba(126, 202, 202, 0.452);
+}
+
+.btn-round:hover {
+  background: rgba(185, 255, 72, 0.501);
+  color: rgb(142, 234, 255);
 }
